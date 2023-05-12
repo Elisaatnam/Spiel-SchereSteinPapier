@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Schere, Stein, Papier</title>
+		<link
+			rel="icon"
+			type="images/x-icon"
+			href="./assets/img/rock-paper-scissors (2).png"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1>Schere, Stein, Papier</h1>
+			</header>
+			<main>
+				<form>
+					<section class="count-rounds">
+						<h2>Wie viele Runden?</h2>
+						<article>
+							<input
+								type="radio"
+								id="five"
+								name="num-of-rounds"
+								value="5"
+								onchange="getRoundValue(5);"
+							/>
+							<label for="five">5</label>
+							<input
+								type="radio"
+								id="ten"
+								name="num-of-rounds"
+								value="10"
+								onchange="getRoundValue(10);"
+							/>
+							<label for="ten">10</label>
+
+							<input
+								type="radio"
+								id="fifteen"
+								name="num-of-rounds"
+								value="15"
+								onchange="getRoundValue(15);"
+							/>
+
+							<label for="fifteen">15</label>
+							<input
+								type="radio"
+								id="twenty"
+								name="num-of-rounds"
+								value="20"
+								onchange="getRoundValue(20);"
+							/>
+							<label for="twenty">20</label>
+						</article>
+					</section>
+					<section class="score-board">
+						<div class="spieler tag">Spieler</div>
+						<div class="computer tag">Computer</div>
+						<article>
+							<div class="spielstand-spieler">0</div>
+							<div>:</div>
+							<div class="spielstand-computer">0</div>
+						</article>
+					</section>
+					<section class="action-output">
+						<h3>Lass uns spielen</h3>
+					</section>
+					<section class="choices">
+						<button
+							type="submit"
+							class="btn1"
+							onclick="getChoiceValue('Schere'); play(); "
+						>
+							<img src="./assets/img/noun-scissors-477919.jpeg" alt="Schere" />
+						</button>
+
+						<button
+							type="submit"
+							class="btn2"
+							onclick="getChoiceValue('Stein'); play(); "
+						>
+							<img src="./assets/img/noun-fist-477918.jpeg" alt="Stein" />
+						</button>
+
+						<button
+							type="submit"
+							class="btn3"
+							onclick="getChoiceValue('Papier'); play(); "
+						>
+							<img src="./assets/img/noun-hand-477922.jpeg" alt="Papier" />
+						</button>
+					</section>
+					<section class="mach-deinen-zug">
+						<p>Mach deinen Zug!</p>
+					</section>
+					<input
+						type="reset"
+						value="Nochmal spielen"
+						onclick="location.reload();"
+					/>
+				</form>
+			</main>
+			<footer>
+				<p>
+					Made with ❤️ by
+					<a href="https://github.com/Elisaatnam" target="_blank">Elisaatnam</a>
+				</p>
+			</footer>
+		</div>
+
+		<script type="text/javascript" src="./assets/js/main.js"></script>
+	</body>
+</html>

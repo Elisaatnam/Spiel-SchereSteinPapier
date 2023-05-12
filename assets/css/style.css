@@ -1,0 +1,201 @@
+@font-face {
+	font-family: Kanit;
+	src: url(../fonts/Kanit-Regular.ttf);
+}
+
+:root {
+	--mb: 5vh;
+	--pd: 2vh;
+	--br: 10px;
+	--english-violet: #6b4e71ff;
+	--charcoal: #3a4454ff;
+	--paynes-gray: #53687eff;
+	--misty-rose: #f5ddddff;
+	--french-grey: #cdc0c6;
+}
+
+/* GLOBAL SETTINGS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Kanit, sans-serif;
+	color: var(--charcoal);
+	background-color: var(--misty-rose);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: var(--mb);
+	font-size: 4vw;
+}
+
+h2 {
+	font-size: 2vw;
+}
+
+h3 {
+	font-size: 3vw;
+}
+
+p {
+	font-size: 1.5vw;
+}
+a {
+	text-decoration: none;
+	color: var(--paynes-gray);
+}
+
+footer p,
+footer a {
+	font-size: 1vw;
+}
+
+div,
+input[type="reset"] {
+	font-size: 1.5vw;
+}
+
+img {
+	width: 8vw;
+	height: auto;
+}
+
+/* WRAPPER  */
+.wrapper {
+	padding: 0 var(--mb);
+	min-height: 100vh;
+}
+
+/* MAIN */
+main {
+	display: flex;
+	justify-content: center;
+}
+
+form {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Section "Wie viele Runden" */
+.count-rounds {
+	background-color: var(--french-grey);
+	border: 2px solid var(--charcoal);
+	border-radius: var(--br);
+	margin-bottom: var(--mb);
+	padding: var(--pd);
+	text-align: center;
+}
+
+input[type="radio"] {
+	margin: 0 0 0 var(--pd);
+}
+
+/* Section Spielstand */
+.score-board {
+	width: 50%;
+	padding: var(--pd);
+	margin-bottom: var(--mb);
+	border: 2px solid var(--charcoal);
+	border-radius: var(--br);
+	background-color: var(--french-grey);
+	text-align: center;
+}
+
+.tag {
+	margin-top: -0.5%;
+	display: inline-block;
+	background-color: var(--english-violet);
+	color: var(--misty-rose);
+	padding: 0.5%;
+	border: 2px solid var(--charcoal);
+	border-radius: var(--br);
+}
+.spieler {
+	position: absolute;
+	left: 29%;
+}
+
+.computer {
+	position: absolute;
+	right: 28%;
+}
+article div {
+	display: inline;
+}
+
+/* Section "Lass uns spielen" */
+.action-output {
+	margin-bottom: var(--mb);
+}
+
+/* Section Schere Stein Papier Buttons */
+.choices {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-bottom: 1vh;
+}
+
+.choices button {
+	background-color: white;
+	width: 12vw;
+	height: 12vw;
+	display: inline-block;
+	border-radius: 50%;
+	border: 2px solid var(--charcoal);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: border 1s ease-in-out;
+}
+
+.choices button:hover {
+	cursor: pointer;
+}
+
+input[type="reset"] {
+	align-self: flex-end;
+	padding: var(--pd);
+	border: 2px solid var(--charcoal);
+	border-radius: var(--br);
+	background-color: var(--paynes-gray);
+	color: var(--misty-rose);
+}
+
+input[type="reset"]:hover {
+	cursor: pointer;
+}
+
+@keyframes red {
+	0% {
+		border: 2px solid var(--charcoal);
+	}
+	25% {
+		border: 2px solid red;
+		box-shadow: 2px 2px 20px red;
+	}
+	100% {
+		border: 2px solid var(--charcoal);
+	}
+}
+
+@keyframes green {
+	0% {
+		border: 2px solid var(--charcoal);
+	}
+	25% {
+		border: 2px solid green;
+		box-shadow: 2px 2px 20px green;
+	}
+	100% {
+		border: 2px solid var(--charcoal);
+	}
+}
