@@ -29,6 +29,7 @@ html {
 
 h1 {
 	text-align: center;
+	text-shadow: 1px -1px 2.5px var(--paynes-gray);
 	margin-bottom: var(--mb);
 	font-size: 4vw;
 }
@@ -59,6 +60,10 @@ input[type="reset"] {
 	font-size: 1.5vw;
 }
 
+label {
+	font-size: 1.5vw;
+}
+
 img {
 	width: 8vw;
 	height: auto;
@@ -68,6 +73,75 @@ img {
 .wrapper {
 	padding: 0 var(--mb);
 	min-height: 100vh;
+}
+
+/* H1 Animation */
+.rotate span {
+	display: inline-flex;
+	animation: rotate 8s linear 1;
+}
+@keyframes rotate {
+	0%,
+	75% {
+		transform: rotateY(360deg);
+	}
+}
+header span:nth-of-type(1) {
+	animation-delay: 0.4s;
+}
+header span:nth-of-type(2) {
+	animation-delay: 0.8s;
+}
+header span:nth-of-type(3) {
+	animation-delay: 1.2s;
+}
+header span:nth-of-type(4) {
+	animation-delay: 1.6s;
+}
+header span:nth-of-type(5) {
+	animation-delay: 2s;
+}
+header span:nth-of-type(6) {
+	animation-delay: 2.4s;
+}
+header span:nth-of-type(7) {
+	animation-delay: 2.8s;
+}
+header span:nth-of-type(8) {
+	animation-delay: 3.2s;
+}
+header span:nth-of-type(9) {
+	animation-delay: 3.6s;
+}
+header span:nth-of-type(10) {
+	animation-delay: 4s;
+}
+header span:nth-of-type(11) {
+	animation-delay: 4.4s;
+}
+header span:nth-of-type(12) {
+	animation-delay: 4.8s;
+}
+header span:nth-of-type(13) {
+	animation-delay: 5.2s;
+}
+header span:nth-of-type(14) {
+	animation-delay: 5.6s;
+}
+header span:nth-of-type(15) {
+	animation-delay: 6s;
+}
+header span:nth-of-type(16) {
+	animation-delay: 6.4s;
+}
+header span:nth-of-type(17) {
+	animation-delay: 6.8s;
+}
+header span:nth-of-type(18) {
+	animation-delay: 7.2s;
+}
+header span:nth-of-type(19) {
+	animation-delay: 7.6s;
 }
 
 /* MAIN */
@@ -91,10 +165,22 @@ form {
 	margin-bottom: var(--mb);
 	padding: var(--pd);
 	text-align: center;
+	transition: box-shadow 0.4s ease-in-out;
+}
+
+.count-rounds:hover {
+	box-shadow: 1px -1px 10px var(--paynes-gray);
+}
+
+.count-rounds article {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 input[type="radio"] {
-	margin: 0 0 0 var(--pd);
+	margin: 0 0.6vh 0 var(--pd);
+	transform: scale(1.25);
 }
 
 /* Section Spielstand */
@@ -154,11 +240,13 @@ article div {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: border 1s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
 .choices button:hover {
 	cursor: pointer;
+	transform: scale(1.025);
+	box-shadow: 1px -1px 10px var(--paynes-gray);
 }
 
 input[type="reset"] {
@@ -168,10 +256,15 @@ input[type="reset"] {
 	border-radius: var(--br);
 	background-color: var(--paynes-gray);
 	color: var(--misty-rose);
+	transition: 0.4s ease-in-out;
 }
 
 input[type="reset"]:hover {
 	cursor: pointer;
+	box-shadow: 1px -1px 10px var(--paynes-gray);
+	transform: scale(1.01);
+	background-color: var(--english-violet);
+	color: var(--misty-rose);
 }
 
 @keyframes red {

@@ -119,8 +119,10 @@ const play = () => {
 			spielstandComputer.innerHTML = computerPunkte;
 			if (spielerPunkte > computerPunkte) {
 				actionOutput.innerHTML = `Glueckwunsch, du hast den Computer geschlagen`;
-			} else {
+			} else if (spielerPunkte < computerPunkte) {
 				actionOutput.innerHTML = `Du hast leider gegen den Computer verloren`;
+			} else {
+				actionOutput.innerHTML = `Gleichstand! Du & der Computer haben jeweils ${spielerPunkte} Punkte.`;
 			}
 		} else if (spielerChoice === "Schere" && computerChoice === "Stein") {
 			btnSchere.style.animation = "red 1s linear 1";
@@ -131,8 +133,10 @@ const play = () => {
 			spielstandComputer.innerHTML = computerPunkte;
 			if (spielerPunkte > computerPunkte) {
 				actionOutput.innerHTML = `Glueckwunsch, du hast den Computer geschlagen`;
-			} else {
+			} else if (spielerPunkte < computerPunkte) {
 				actionOutput.innerHTML = `Du hast leider gegen den Computer verloren`;
+			} else {
+				actionOutput.innerHTML = `Gleichstand! Du & der Computer haben jeweils ${spielerPunkte} Punkte.`;
 			}
 		} else if (spielerChoice === "Schere" && computerChoice === "Papier") {
 			btnSchere.style.animation = "green 1s linear 1";
@@ -143,8 +147,10 @@ const play = () => {
 			spielstandComputer.innerHTML = computerPunkte;
 			if (spielerPunkte > computerPunkte) {
 				actionOutput.innerHTML = `Glueckwunsch, du hast den Computer geschlagen`;
-			} else {
+			} else if (spielerPunkte < computerPunkte) {
 				actionOutput.innerHTML = `Du hast leider gegen den Computer verloren`;
+			} else {
+				actionOutput.innerHTML = `Gleichstand! Du & der Computer haben jeweils ${spielerPunkte} Punkte.`;
 			}
 		} else if (spielerChoice === "Stein" && computerChoice === "Schere") {
 			btnStein.style.animation = "green 1s linear 1";
@@ -155,8 +161,10 @@ const play = () => {
 			spielstandComputer.innerHTML = computerPunkte;
 			if (spielerPunkte > computerPunkte) {
 				actionOutput.innerHTML = `Glueckwunsch, du hast den Computer geschlagen`;
-			} else {
+			} else if (spielerPunkte < computerPunkte) {
 				actionOutput.innerHTML = `Du hast leider gegen den Computer verloren`;
+			} else {
+				actionOutput.innerHTML = `Gleichstand! Du & der Computer haben jeweils ${spielerPunkte} Punkte.`;
 			}
 		} else if (spielerChoice === "Stein" && computerChoice === "Papier") {
 			btnStein.style.animation = "red 1s linear 1";
@@ -167,8 +175,10 @@ const play = () => {
 			spielstandComputer.innerHTML = computerPunkte;
 			if (spielerPunkte > computerPunkte) {
 				actionOutput.innerHTML = `Glueckwunsch, du hast den Computer geschlagen`;
-			} else {
+			} else if (spielerPunkte < computerPunkte) {
 				actionOutput.innerHTML = `Du hast leider gegen den Computer verloren`;
+			} else {
+				actionOutput.innerHTML = `Gleichstand! Du & der Computer haben jeweils ${spielerPunkte} Punkte.`;
 			}
 		} else if (spielerChoice === "Papier" && computerChoice === "Schere") {
 			btnPapier.style.animation = "red 1s linear 1";
@@ -179,8 +189,10 @@ const play = () => {
 			spielstandComputer.innerHTML = computerPunkte;
 			if (spielerPunkte > computerPunkte) {
 				actionOutput.innerHTML = `Glueckwunsch, du hast den Computer geschlagen`;
-			} else {
+			} else if (spielerPunkte < computerPunkte) {
 				actionOutput.innerHTML = `Du hast leider gegen den Computer verloren`;
+			} else {
+				actionOutput.innerHTML = `Gleichstand! Du & der Computer haben jeweils ${spielerPunkte} Punkte.`;
 			}
 		} else if (spielerChoice === "Papier" && computerChoice === "Stein") {
 			btnPapier.style.animation = "green 1s linear 1";
@@ -191,8 +203,10 @@ const play = () => {
 			spielstandComputer.innerHTML = computerPunkte;
 			if (spielerPunkte > computerPunkte) {
 				actionOutput.innerHTML = `Glueckwunsch, du hast den Computer geschlagen`;
-			} else {
+			} else if (spielerPunkte < computerPunkte) {
 				actionOutput.innerHTML = `Du hast leider gegen den Computer verloren`;
+			} else {
+				actionOutput.innerHTML = `Gleichstand! Du & der Computer haben jeweils ${spielerPunkte} Punkte.`;
 			}
 		}
 	}
