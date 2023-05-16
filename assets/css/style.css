@@ -56,7 +56,7 @@ footer a {
 }
 
 div,
-input[type="reset"] {
+.reset {
 	font-size: 1.5vw;
 }
 
@@ -172,7 +172,11 @@ form {
 	box-shadow: 1px -1px 10px var(--paynes-gray);
 }
 
-.count-rounds article {
+.runden-anzeige {
+	display: none;
+}
+
+.runden-anzahl {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -249,7 +253,7 @@ article div {
 	box-shadow: 1px -1px 10px var(--paynes-gray);
 }
 
-input[type="reset"] {
+.reset {
 	align-self: flex-end;
 	padding: var(--pd);
 	border: 2px solid var(--charcoal);
@@ -259,7 +263,7 @@ input[type="reset"] {
 	transition: 0.4s ease-in-out;
 }
 
-input[type="reset"]:hover {
+.reset:hover {
 	cursor: pointer;
 	box-shadow: 1px -1px 10px var(--paynes-gray);
 	transform: scale(1.01);
@@ -291,4 +295,24 @@ input[type="reset"]:hover {
 	100% {
 		border: 2px solid var(--charcoal);
 	}
+}
+@keyframes orange {
+	0% {
+		border: 2px solid var(--charcoal);
+	}
+	25% {
+		border: 2px solid orange;
+		box-shadow: 2px 2px 20px orange;
+	}
+	100% {
+		border: 2px solid var(--charcoal);
+	}
+}
+
+.display-none {
+	display: none;
+}
+
+.display-block {
+	display: block;
 }
