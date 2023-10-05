@@ -34,7 +34,8 @@ let computerChoice = "";
 // +++++++++++++++++++++++ Funktionen +++++++++++++++++++++++
 //random Computer Choice generieren
 const randomPcChoice = () => {
-	let randomNum = Number(Math.round(Math.random() * 2 + 1));
+	let randomNum = Math.floor(Math.random() * 3 + 1);
+	console.log(randomNum);
 
 	if (randomNum === 1) {
 		computerChoice = "Schere";
@@ -120,7 +121,6 @@ const playGame = userChoice => {
 
 //  Game Over Funktion
 const gameOver = () => {
-	gesamteRundenZahl = 0;
 	btnArea.classList.add("display-none");
 	makeYourMove.classList.add("display-none");
 };
